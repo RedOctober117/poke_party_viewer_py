@@ -2,7 +2,6 @@
  
 An experiment using PyBoy to view a players party in real time
 
-Demo:
 ![](media/Code_75i2Pp322T.gif)
 
 ## References
