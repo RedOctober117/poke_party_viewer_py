@@ -2,16 +2,11 @@ from pyboy import PyBoy
 from collections import namedtuple
 from party_viewer.data_structures import gs_ram_map
 from party_viewer.image_manager import render_pokemon
-# import pycurl
-# import certifi
-# from io import BytesIO
 
 def main():
     parsed_dex = parse_dex('gen2dex.txt')
     tupled_dex = pokemon_tuple_generator(parsed_dex)
     nat_dex_dict = dict_of_nat_dex(tupled_dex)
-    # for mon in tupled_dex:
-    #     print(mon)
     
     initialize_rom('Pokemon - Silver Version (UE) [C][!].gbc', nat_dex_dict)
 
@@ -72,23 +67,6 @@ def pokemon_tuple_generator(list_mon):
         if len(mon) > 0:
             tupled_mons.append(cls._make(mon))
     return tupled_mons
-
-
-
-# revisit on linux
-
-# def download_sprites(dex, template_url):
-#     buffer = BytesIO()
-#     curl = pycurl.Curl()
-#     for mon in dex:
-#         curl.setopt(curl.URL, format(f'{template_url}{mon}.png'))
-#         curl.setopt(curl.WRITEDATA, buffer)
-#         curl.setopt(curl.CAINFO, certifi.where())
-#         curl.perform()
-#         curl.close()
-
-    
-#     return 1
 
 if __name__ == '__main__':
     main()

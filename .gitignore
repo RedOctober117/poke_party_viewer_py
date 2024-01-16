@@ -2,8 +2,10 @@
 *.gb*
 *.nds
 Scripts/
-Include/
+[Ii]nclude/
 *.cfg
+lib*
+bin
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
