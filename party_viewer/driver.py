@@ -35,7 +35,7 @@ def initialize_rom(rom, dex):
                 case None:
                     pass
                 case _:
-                    output_buffer += render_pokemon(dex[mem_value])
+                    output_buffer += render_pokemon(dex[mem_value]).strip('\n')
             prev_members[i - 1] = mem_value
 
         match output_buffer:
