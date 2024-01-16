@@ -3,7 +3,7 @@
 An experiment using PyBoy to view a players party in real time
 
 Demo:
-[demo](media/Code_75i2Pp322T.gif)
+![](media/Code_75i2Pp322T.gif)
 
 ## References
 https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Johto_Pok%C3%A9dex_number
