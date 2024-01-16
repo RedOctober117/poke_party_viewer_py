@@ -1,5 +1,6 @@
 # Project Specific
 *.gb*
+*.nds
 Scripts/
 Include/
 *.cfg
